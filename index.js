@@ -27,8 +27,9 @@ app.post('/send-email', async (req, res) => {
     const time = req.body.time || 'Time not specified'
 
     const mailOptions = {
+
       from: {
-        name: 'My Portfolio',
+        name: 'Portfolio',
         address: process.env.EMAIL
       },
       to: process.env.EMAIL,
